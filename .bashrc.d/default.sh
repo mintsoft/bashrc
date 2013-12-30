@@ -9,8 +9,9 @@ fi
 
 export GIT_SSH=/home/rob/gitScript/sshKey.sh
 
-~/bin/checkdowns
+[[ -x ~/bin/checkdowns ]] && ~/bin/checkdowns;
 
+#per-user cpan
 export PERL_LOCAL_LIB_ROOT="/home/rob/perl5";
 export PERL_MB_OPT="--install_base /home/rob/perl5";
 export PERL_MM_OPT="INSTALL_BASE=/home/rob/perl5";
