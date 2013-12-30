@@ -1,12 +1,9 @@
-#
-#
-#
+# Git repository status for PS1
 
 #function setface() {
 #	if [[ $? == 0 ]]; then face="$BGreen:) " else face="$BRed:( "; fi
 #}
 
-#PS1="`if [[ \$? == 0 ]]; then echo "$BGreen:) "; else echo "$BRed:( "; fi;` $BBlack\t $BBlue\w"$Color_Off'$(git branch &>/dev/null;\
 PS1="$BBlack\t $BBlue\w"$Color_Off'$(git branch &>/dev/null;\
 if [ $? -eq 0 ]; then \
 	echo "$(echo `git status` | grep "nothing to commit" > /dev/null 2>&1; \
